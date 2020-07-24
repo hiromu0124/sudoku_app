@@ -1,2 +1,0 @@
-class SudokuController < ApplicationController
-end
