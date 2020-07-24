@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  font-size:50px ;
+  text-align: center;
+}
+#sudoku{
+  border-collapse:collapse;
+  background-color: rgb(255, 253, 242);
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border: 1px ridge black;
+}
+.up{
+  border-bottom: 1px dotted black;
+  
+}
+.medium{
+  border-bottom: 1px dotted black;
+}
+.bottom{
+  border-bottom: 2px solid black;
+}
+.group{
+  border-right: 2px solid black; 
+}
+td{
+  text-align: center;
+  line-height: 7px;
+  border-right: 1px dotted black;
+}
+
