@@ -28,8 +28,17 @@ body{
   border-right: 2px solid black; 
 }
 td{
+  width: 11.1%;
+  height: 11.1%;
   text-align: center;
   line-height: 7px;
   border-right: 1px dotted black;
 }
-
+.sudoku_form{
+  font-size: 17px;
+  width: 30%;
+  text-align: center;
+  line-height: 7px;
+  background-color: rgb(255, 253, 242);
+  outline: 0;
+}
