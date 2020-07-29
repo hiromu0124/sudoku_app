@@ -14,17 +14,15 @@ body{
   margin: auto;
   border: 1px ridge black;
 }
-.up{
+.sudoku_border{
   border-bottom: 1px dotted black;
   
 }
-.medium{
-  border-bottom: 1px dotted black;
-}
-.bottom{
+
+.bottom_border{
   border-bottom: 2px solid black;
 }
-.group{
+.right_border{
   border-right: 2px solid black; 
 }
 td{
@@ -40,5 +38,6 @@ td{
   text-align: center;
   line-height: 7px;
   background-color: rgb(255, 253, 242);
+  border:none;
   outline: 0;
 }

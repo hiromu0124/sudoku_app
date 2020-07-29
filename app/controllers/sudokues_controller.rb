@@ -17,6 +17,6 @@ class SudokuesController < ApplicationController
   
   private
   def sudoku_params
-    params.require(:sudoku).permit(:model_answer,:answer,:number)
+    params.permit(:model_answer,:answer,:number)
   end
 end
