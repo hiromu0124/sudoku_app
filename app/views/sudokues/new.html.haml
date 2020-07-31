@@ -1,5 +1,4 @@
 .header
   数独
-=form_with(model: @sudoku, url: sudokues_path, local: true) do |f|
   %table#sudoku
-  =f.submit "初期値設定"
+  %button#sudoku_submit 初期値保存
