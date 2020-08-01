@@ -14,11 +14,11 @@ $(function(){
         
         var data = x
         if(k == 2 || k == 5){
+          html += `<td class="right_border" data-number='${data}'><input value='${data}' maxlength="1" class="sudoku_form" name="sudoku[model_answer]"><label><input type="radio" value='${data}' name="sudoku[number]"  class="sudoku_radio"></label></td>`
           x=x+1
-          html += `<td class="right_border" data-number='${data}'><input value='${data}' maxlength="1" class="sudoku_form" name="sudoku[model_answer]"><input type="hidden" value='${data}' name="sudoku[number]"><input type="submit" class="hidden_submit"></td>`
         }else{
+          html += `<td ><label><input type="radio" value='${data}' name="sudoku[number]" class="sudoku_radio"></label></td>`
           x=x+1
-          html += `<td data-number='${data}'><input  value='${data}' maxlength="1" class="sudoku_form" ><input type="hidden" value='${data}' name="sudoku[number]"><input type="submit" class="hidden_submit"></td>`
         }
       }
       
@@ -28,9 +28,10 @@ $(function(){
     parent.append(html);
   }
   create_table();
-  $(function submit(){
-    document.getElementById("sudoku_submit").click(console.log("ok"));
-      
-    });
-  
+  function submitFnc(){
+    var f= document.getElementById("model_answer");
+    f.method="post";
+    f.action=" new_sudokue"
+    f.submit
+  }
 });

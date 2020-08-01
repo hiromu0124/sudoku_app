@@ -1,4 +1,14 @@
 .header
   数独
+=form_with(model: @sudoku, url: sudokues_path, local: true) do |f|
   %table#sudoku
-  %button#sudoku_submit 初期値保存
+  %label
+  =f.radio_button :model_answer, id:"model_answer" "1"
+  =f.radio_button :model_answer, "2"
+  =f.radio_button :model_answer, "3"
+  =f.radio_button :model_answer, "4"
+  =f.radio_button :model_answer, "5"
+  =f.radio_button :model_answer, "6"
+  =f.radio_button :model_answer, "7"
+  =f.radio_button :model_answer, "8"
+  =f.radio_button :model_answer, "9"
