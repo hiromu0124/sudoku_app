@@ -14,10 +14,10 @@ $(function(){
         
         var data = x
         if(k == 2 || k == 5){
-          html += `<td class="right_border" data-number='${data}'><input value='${data}' maxlength="1" class="sudoku_form" name="sudoku[model_answer]"><label><input type="radio" value='${data}' name="sudoku[number]"  class="sudoku_radio"></label></td>`
+          html += `<td class="right_border" data-number='${data}'><label><input type="radio" value='${data}' name="sudoku[number]"  class="sudoku_radio"><div class="model_answer">1</div></label></td>`
           x=x+1
         }else{
-          html += `<td ><label><input type="radio" value='${data}' name="sudoku[number]" class="sudoku_radio"></label></td>`
+          html += `<td ><label><input type="radio" value='${data}' name="sudoku[number]" class="sudoku_radio"><div class="model_answer">1</div></label></td>`
           x=x+1
         }
       }

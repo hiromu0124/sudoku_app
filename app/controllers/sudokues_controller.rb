@@ -4,6 +4,7 @@ class SudokuesController < ApplicationController
   end
   def new
     @sudoku=Sudoku.new
+    @model_answer=Sudoku.all
   end
   def create
     @sudoku=Sudoku.create(sudoku_params)

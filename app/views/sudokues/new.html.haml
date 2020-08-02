@@ -3,7 +3,7 @@
 =form_with(model: @sudoku, url: sudokues_path, local: true) do |f|
   %table#sudoku
   %label
-  =f.radio_button :model_answer, id:"model_answer" "1"
+  =f.radio_button :model_answer, "1"
   =f.radio_button :model_answer, "2"
   =f.radio_button :model_answer, "3"
   =f.radio_button :model_answer, "4"
